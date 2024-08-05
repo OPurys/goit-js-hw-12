@@ -9,8 +9,18 @@ p {
   margin: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 p:last-child {
   margin-bottom: 0;
+}
+
+body {
+  margin: 0;
 }
 
 ul {
@@ -26,10 +36,19 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
 }
 
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
 }
