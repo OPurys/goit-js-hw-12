@@ -70,6 +70,7 @@ async function handleClick() {
     const response = await searchImage(inputValue, page);
     galleryEl.insertAdjacentHTML('beforeend', renderCards(response));
     scrollPage();
+    gallery.refresh();
 
     const lastPage = Math.ceil(response.totalHits / 15);
 
